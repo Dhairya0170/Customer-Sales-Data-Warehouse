@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: public
+    schema: public
+    tables:
+      - name: customers
+      - name: products
+      - name: orders
+      - name: order_items

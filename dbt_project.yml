@@ -1,0 +1,19 @@
+name: "customer_sales_dbt"
+version: "1.0.0"
+
+profile: "customer_sales_dbt"
+
+model-paths: ["models"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  customer_sales_dbt:
+    staging:
+      +schema: staging
+      +materialized: view
+
+    marts:
+      +schema: marts
+      +materialized: table

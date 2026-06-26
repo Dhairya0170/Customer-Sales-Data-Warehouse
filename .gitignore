@@ -1,0 +1,15 @@
+# Ignore data files
+data/raw/
+data/processed/
+
+# Ignore virtual environments
+venv/
+
+# Ignore dbt compilation and logs
+logs/
+target/
+dbt_packages/
+
+# Ignore system files
+.DS_Store
+__pycache__/
